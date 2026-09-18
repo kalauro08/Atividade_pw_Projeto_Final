@@ -22,3 +22,6 @@
 .instagram-link { background:linear-gradient(135deg,#f58529,#dd2a7b,#8134af,#515bd4); color:#fff; box-shadow:0 12px 24px rgba(221,42,123,.25); }
 .social-link i { font-size:1.1rem; }
 @media (max-width:767.98px) { .portfolio-highlight { grid-template-columns:auto 1fr; }.project-link { grid-column:1 / -1; text-align:center; } }
+#galeria .card { height:380px; }
+#galeria .card .card-body { display:flex; flex-direction:column; }
+#galeria .card .project-card-link { margin-top:auto!important; align-self:flex-start; }

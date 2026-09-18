@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cadastro de Alunos | PW</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="shell">
+    <a class="back-link" href="../index.html">← Voltar ao portfólio</a>
+    <header class="intro">
+      <span class="eyebrow">PROJETO PW · GESTÃO ACADÊMICA</span>
+      <h1>Cadastro de alunos</h1>
+      <p>Organize informações acadêmicas, acompanhe notas e consulte a situação de cada aluno.</p>
+    </header>
+    <section class="dashboard" aria-label="Cadastro e lista de alunos">
+      <article class="student-form-card">
+        <div class="card-heading"><div><span class="eyebrow">NOVO REGISTRO</span><h2>Adicionar aluno</h2></div><span class="tool-icon">✦</span></div>
+        <form id="formAluno" class="student-form">
+          <label for="nomeAluno">Nome completo<input id="nomeAluno" type="text" placeholder="Ex.: Ana Carolina Souza" required></label>
+          <label for="emailAluno">E-mail<input id="emailAluno" type="email" placeholder="aluno@escola.com" required></label>
+          <div class="form-row"><label for="cursoAluno">Curso<input id="cursoAluno" type="text" placeholder="Ex.: Informática" required></label><label for="turmaAluno">Turma<input id="turmaAluno" type="text" placeholder="Ex.: 3º A" required></label></div>
+          <div class="grades-title"><span>Notas do bimestre</span><small>de 0 a 10</small></div>
+          <div class="form-row grades"><label for="nota1">Nota 1<input id="nota1" class="nota" type="number" min="0" max="10" step="0.1" required></label><label for="nota2">Nota 2<input id="nota2" class="nota" type="number" min="0" max="10" step="0.1" required></label><label for="nota3">Nota 3<input id="nota3" class="nota" type="number" min="0" max="10" step="0.1" required></label><label for="nota4">Nota 4<input id="nota4" class="nota" type="number" min="0" max="10" step="0.1" required></label></div>
+          <button type="submit">Cadastrar aluno <span>↗</span></button>
+          <p id="mensagemForm" class="form-message" aria-live="polite"></p>
+        </form>
+      </article>
+      <aside class="student-list-card"><div class="card-heading"><div><span class="eyebrow">REGISTROS</span><h2>Alunos cadastrados</h2></div><button id="limparAlunos" class="clear-button" type="button">Limpar</button></div><div class="stats"><div><strong id="totalAlunos">0</strong><span>Total</span></div><div><strong id="totalAprovados">0</strong><span>Aprovados</span></div><div><strong id="mediaTurma">0,0</strong><span>Média geral</span></div></div><ul id="listaAlunos"><li class="empty-list">Nenhum aluno cadastrado ainda.</li></ul></aside>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

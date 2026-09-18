@@ -1,0 +1,536 @@
+<!-- Igor Gabriel Kalauro de Abreu -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tech Solutions | Desenvolvimento Web</title>
+
+    <link
+    href="assets/vendor/bootstrap/bootstrap.min.css"
+    rel="stylesheet"
+    />
+    <link
+    rel="stylesheet"
+    href="assets/vendor/fontawesome/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div id="loader" aria-live="polite" aria-label="Carregando página">
+    <div class="spinner-border text-primary" style="width: 4rem; height: 4rem" role="status">
+        <span class="visually-hidden">Carregando...</span>
+    </div>
+    </div>
+
+    <header>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm">
+        <div class="container">
+        <a class="navbar-brand fw-bold" href="#inicio" aria-label="Tech Solutions inicio">
+            <i class="fa-solid fa-code me-2" aria-hidden="true"></i>
+            Tech Solutions
+        </a>
+
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#menu"
+            aria-controls="menu"
+            aria-expanded="false"
+            aria-label="Abrir menu"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item"><a class="nav-link active" href="#inicio">Início</a></li>
+            <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+            <li class="nav-item"><a class="nav-link" href="#servicos">Serviços</a></li>
+            <li class="nav-item"><a class="nav-link" href="#galeria">Galeria</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+            <li class="nav-item ms-lg-3">
+                <button id="btnDarkMode" class="btn btn-outline-light btn-sm" type="button" aria-label="Alternar modo escuro">
+                <i class="fa-regular fa-moon" aria-hidden="true"></i>
+                </button>
+            </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+    </header>
+
+    <main>
+    <section id="inicio" class="hero d-flex align-items-center">
+        <div class="container">
+        <div class="row align-items-center g-5">
+            <div class="col-lg-6 reveal-left">
+            <p class="eyebrow mb-3">Desenvolvimento web profissional</p>
+            <h1 class="display-4 fw-bold mb-4">Transformamos ideias em experiências digitais incríveis.</h1>
+            <p class="lead text-light-emphasis mb-4">
+                Criamos landing pages, sites institucionais e soluções modernas com design premium,
+                tecnologia atual e foco em resultados.
+            </p>
+            <div class="d-flex flex-wrap gap-3">
+                <a href="#sobre" class="btn btn-primary btn-lg">Saiba Mais</a>
+                <a href="#contato" class="btn btn-outline-light btn-lg">Contato</a>
+            </div>
+            </div>
+
+            <div class="col-lg-6 reveal-right">
+            <div class="hero-card">
+                <img
+                src="assets/images/hero.jpg"
+                alt="Equipe desenvolvendo tecnologia"
+                />
+                <div class="hero-badge">
+                <strong>+150</strong>
+                <span>Projetos entregues</span>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section id="sobre" class="py-5">
+        <div class="container">
+        <div class="row align-items-center g-5">
+            <div class="col-lg-6 reveal-left">
+            <img
+                src="assets/images/sobre.jpg"
+                class="img-fluid rounded-4 shadow-lg about-image"
+                alt="Equipe de desenvolvimento"
+            />
+            </div>
+
+            <div class="col-lg-6 reveal-right">
+            <span class="section-tag">Sobre nós</span>
+            <h2 class="mb-4">Quem Somos</h2>
+            <p>
+                A Tech Solutions é uma empresa fictícia criada exclusivamente para fins educacionais,
+                porém com estrutura de um negócio digital profissional e moderno.
+            </p>
+            <p>
+                Durante a disciplina, cada aluno poderá personalizar esse template e transformá-lo em um
+                projeto único, com identidade visual, proposta de serviços e visão comercial.
+            </p>
+
+            <ul class="list-group list-group-flush mt-4">
+                <li class="list-group-item"><i class="fa-solid fa-check text-success me-2"></i> HTML5</li>
+                <li class="list-group-item"><i class="fa-solid fa-check text-success me-2"></i> CSS3</li>
+                <li class="list-group-item"><i class="fa-solid fa-check text-success me-2"></i> Bootstrap</li>
+                <li class="list-group-item"><i class="fa-solid fa-check text-success me-2"></i> JavaScript</li>
+            </ul>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section id="servicos" class="py-5 bg-light">
+        <div class="container">
+        <div class="text-center mb-5 reveal">
+            <span class="section-tag">Serviços</span>
+            <h2 class="fw-bold">Nossos Serviços</h2>
+            <p class="text-muted mb-0">Soluções digitais pensadas para crescer seu negócio.</p>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-md-4 reveal-left">
+            <div class="card service-card h-100 border-0 shadow-sm">
+                <div class="card-body text-center p-4">
+                <i class="fa-solid fa-laptop-code fa-3x text-primary mb-3"></i>
+                <h4>Desenvolvimento Web</h4>
+                <p>Criação de sites modernos, responsivos e com performance otimizada.</p>
+                </div>
+            </div>
+            </div>
+
+            <div class="col-md-4 reveal">
+            <div class="card service-card h-100 border-0 shadow-sm">
+                <div class="card-body text-center p-4">
+                <i class="fa-solid fa-mobile-screen fa-3x text-success mb-3"></i>
+                <h4>Responsividade</h4>
+                <p>Layout adaptado para celulares, tablets e desktops com experiência fluida.</p>
+                </div>
+            </div>
+            </div>
+
+            <div class="col-md-4 reveal-right">
+            <div class="card service-card h-100 border-0 shadow-sm">
+                <div class="card-body text-center p-4">
+                <i class="fa-solid fa-server fa-3x text-danger mb-3"></i>
+                <h4>Hospedagem</h4>
+                <p>Publicação e manutenção para que seu projeto esteja sempre disponível.</p>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-primary text-white stats-section">
+        <div class="container">
+        <div class="row text-center g-4">
+            <div class="col-md-3 reveal">
+            <i class="fa-solid fa-user-graduate fa-3x mb-3"></i>
+            <h2 class="counter" data-target="500">0</h2>
+            <p class="mb-0">Alunos formados</p>
+            </div>
+            <div class="col-md-3 reveal">
+            <i class="fa-solid fa-code fa-3x mb-3"></i>
+            <h2 class="counter" data-target="150">0</h2>
+            <p class="mb-0">Projetos desenvolvidos</p>
+            </div>
+            <div class="col-md-3 reveal">
+            <i class="fa-solid fa-award fa-3x mb-3"></i>
+            <h2 class="counter" data-target="10">0</h2>
+            <p class="mb-0">Anos de experiência</p>
+            </div>
+            <div class="col-md-3 reveal">
+            <i class="fa-solid fa-laptop fa-3x mb-3"></i>
+            <h2 class="counter" data-target="100">0</h2>
+            <p class="mb-0">Projetos responsivos</p>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section id="galeria" class="py-5">
+        <div class="container">
+        <div class="text-center mb-5 reveal">
+            <span class="section-tag">Portfólio</span>
+            <h2 class="fw-bold">Nosso Portfólio</h2>
+            <p class="text-muted mb-0">Projetos com foco em funcionalidade e visual moderno.</p>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-lg-4 col-md-6 reveal-left">
+            <div class="card portfolio-card border-0 shadow-sm h-100">
+                <img
+                src="assets/images/projeto-landing-page.jpg"
+                class="card-img-top"
+                alt="Landing Page"
+                />
+                <div class="card-body">
+                <h4>Landing Page</h4>
+                <p>Estrutura moderna com foco em conversão e visual comercial.</p>
+                <a href="https://github.com/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Visualizar</a>
+                </div>
+            </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 zoom">
+            <div class="card portfolio-card border-0 shadow-sm h-100">
+                <img
+                src="assets/images/projeto-loja-virtual.jpg"
+                class="card-img-top"
+                alt="Loja Virtual"
+                />
+                <div class="card-body">
+                <h4>Loja Virtual</h4>
+                <p>Interface elegante, responsiva e voltada para experiência do cliente.</p>
+                <a href="https://github.com/" class="btn btn-success" target="_blank" rel="noopener noreferrer">Visualizar</a>
+                </div>
+            </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 reveal-right">
+            <div class="card portfolio-card border-0 shadow-sm h-100">
+                <img
+                src="assets/images/projeto-sistema-web.jpg"
+                class="card-img-top"
+                alt="Sistema Web"
+                />
+                <div class="card-body">
+                <h4>Sistema Web</h4>
+                <p>Dashboard com organização, clareza visual e navegação simples.</p>
+                <a href="https://github.com/" class="btn btn-danger" target="_blank" rel="noopener noreferrer">Visualizar</a>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-light">
+        <div class="container">
+        <div class="text-center mb-5 reveal">
+            <span class="section-tag">Diferenciais</span>
+            <h2>Por que escolher nossa empresa?</h2>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-md-6 reveal-left">
+            <div class="d-flex align-items-start gap-3 feature-item">
+                <i class="fa-solid fa-check text-success fa-2x"></i>
+                <div>
+                <h4>Qualidade</h4>
+                <p>Código organizado e alinhado com boas práticas de desenvolvimento.</p>
+                </div>
+            </div>
+            </div>
+
+            <div class="col-md-6 reveal-right">
+            <div class="d-flex align-items-start gap-3 feature-item">
+                <i class="fa-solid fa-shield text-primary fa-2x"></i>
+                <div>
+                <h4>Segurança</h4>
+                <p>Estratégias e padrões modernos para manter a solução mais estável.</p>
+                </div>
+            </div>
+            </div>
+
+            <div class="col-md-6 reveal-left">
+            <div class="d-flex align-items-start gap-3 feature-item">
+                <i class="fa-solid fa-clock text-warning fa-2x"></i>
+                <div>
+                <h4>Rapidez</h4>
+                <p>Execução ágil com foco em prazo, eficiência e clareza na entrega.</p>
+                </div>
+            </div>
+            </div>
+
+            <div class="col-md-6 reveal-right">
+            <div class="d-flex align-items-start gap-3 feature-item">
+                <i class="fa-solid fa-headset text-danger fa-2x"></i>
+                <div>
+                <h4>Suporte</h4>
+                <p>Atendimento atento e contínuo para garantir uma melhor experiência.</p>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+        <div class="text-center mb-5 reveal">
+            <span class="section-tag">Depoimentos</span>
+            <h2>O que nossos clientes dizem</h2>
+        </div>
+
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="text-center testimonial-item">
+                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=300&q=80" class="rounded-circle shadow mb-3" width="120" alt="João Silva" />
+                <h4>João Silva</h4>
+                <p class="lead">“Excelente atendimento e qualidade de execução. Nossa presença digital melhorou muito.”</p>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="text-center testimonial-item">
+                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=300&q=80" class="rounded-circle shadow mb-3" width="120" alt="Maria Souza" />
+                <h4>Maria Souza</h4>
+                <p class="lead">“Equipe muito profissional, criativa e extremamente atenta às necessidades.”</p>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="text-center testimonial-item">
+                <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=300&q=80" class="rounded-circle shadow mb-3" width="120" alt="Carlos Oliveira" />
+                <h4>Carlos Oliveira</h4>
+                <p class="lead">“Recomendo sem dúvida. O resultado final superou nossas expectativas.”</p>
+                </div>
+            </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Próximo</span>
+            </button>
+        </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-light">
+        <div class="container">
+        <div class="text-center mb-5 reveal">
+            <span class="section-tag">FAQ</span>
+            <h2 class="fw-bold">Perguntas Frequentes</h2>
+            <p class="text-muted mb-0">Informações rápidas sobre o nosso processo.</p>
+        </div>
+
+        <div class="accordion" id="faq">
+            <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#pergunta1">
+                O que é HTML?
+                </button>
+            </h2>
+            <div id="pergunta1" class="accordion-collapse collapse show" data-bs-parent="#faq">
+                <div class="accordion-body">
+                HTML é a linguagem responsável pela estrutura e organização dos elementos de uma página web.
+                </div>
+            </div>
+            </div>
+
+            <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pergunta2">
+                O que é CSS?
+                </button>
+            </h2>
+            <div id="pergunta2" class="accordion-collapse collapse" data-bs-parent="#faq">
+                <div class="accordion-body">
+                CSS é utilizado para definir estilos, layout, cores, fontes e responsividade visual do site.
+                </div>
+            </div>
+            </div>
+
+            <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pergunta3">
+                O que é Bootstrap?
+                </button>
+            </h2>
+            <div id="pergunta3" class="accordion-collapse collapse" data-bs-parent="#faq">
+                <div class="accordion-body">
+                Bootstrap é um framework CSS voltado para a criação rápida de layouts responsivos e modernos.
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section id="contato" class="py-5">
+        <div class="container">
+        <div class="text-center mb-5 reveal">
+            <span class="section-tag">Contato</span>
+            <h2 class="fw-bold">Entre em Contato</h2>
+            <p class="mb-0">Preencha o formulário e fale com nossa equipe.</p>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-lg-6 reveal-left">
+            <form id="formContato" class="contact-form" action="https://formsubmit.co/SEU_EMAIL_AQUI" method="POST">
+                <input type="hidden" name="_subject" value="Novo contato pelo site Tech Solutions" />
+                <input type="hidden" name="_template" value="table" />
+                <div class="mb-3">
+                <label class="form-label" for="nome">Nome</label>
+                <input id="nome" name="nome" type="text" class="form-control" placeholder="Digite seu nome" autocomplete="name" required />
+                </div>
+
+                <div class="mb-3">
+                <label class="form-label" for="email">E-mail</label>
+                <input id="email" name="email" type="email" class="form-control" placeholder="Digite seu e-mail" autocomplete="email" required />
+                </div>
+
+                <div class="mb-3">
+                <label class="form-label" for="assunto">Assunto</label>
+                <input id="assunto" name="assunto" type="text" class="form-control" placeholder="Informe o assunto" required />
+                </div>
+
+                <div class="mb-3">
+                <label class="form-label" for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" class="form-control" rows="5" placeholder="Escreva sua mensagem" required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-lg">Enviar Mensagem</button>
+            </form>
+            </div>
+
+            <div class="col-lg-6 reveal-right">
+            <div class="map-container rounded-4 shadow">
+                <iframe
+                    class="map-frame"
+                    style="border: 0;"
+                    loading="lazy"
+                    allowfullscreen
+                    referrerpolicy="no-referrer-when-downgrade"
+                    src="https://www.google.com/maps?q=Ji-Paran%C3%A1%2C%20RO&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                    title="Mapa de Ji-Paraná"
+                ></iframe>
+                <div class="map-overlay">
+                    <h3>Onde estamos</h3>
+                    <p>Ji-Paraná, Rondônia, Brasil</p>
+                    <a class="btn btn-primary" href="https://www.google.com/maps/search/?api=1&query=Ji-Paran%C3%A1%2C%20RO" target="_blank" rel="noopener noreferrer">
+                        Abrir no Google Maps
+                    </a>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-primary text-white newsletter">
+        <div class="container text-center">
+        <h2>Receba nossas novidades</h2>
+        <p>Inscreva-se gratuitamente e fique por dentro de tudo.</p>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+            <form id="formNewsletter" class="input-group newsletter-group" action="https://formsubmit.co/SEU_EMAIL_AQUI" method="POST">
+                <label class="visually-hidden" for="newsletterEmail">E-mail para a newsletter</label>
+                <input type="hidden" name="_subject" value="Nova inscrição na newsletter" />
+                <input id="newsletterEmail" name="email" type="email" class="form-control" placeholder="Digite seu e-mail" autocomplete="email" required />
+                <button class="btn btn-dark" type="submit">Inscrever</button>
+            </form>
+            </div>
+        </div>
+        </div>
+    </section>
+    </main>
+
+    <footer class="bg-dark text-white pt-5">
+    <div class="container">
+        <div class="row g-4">
+        <div class="col-lg-4">
+            <h4>Tech Solutions</h4>
+            <p class="text-white-50">Template criado para a disciplina de Desenvolvimento Web, com foco em prática e boa apresentação visual.</p>
+        </div>
+
+        <div class="col-lg-4">
+            <h4>Links</h4>
+            <ul class="list-unstyled footer-links">
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#contato">Contato</a></li>
+            </ul>
+        </div>
+
+        <div class="col-lg-4">
+            <h4>Redes Sociais</h4>
+            <div class="social-icons">
+            <a href="https://www.facebook.com/" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+            <a href="https://github.com/" aria-label="GitHub" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
+            </div>
+        </div>
+        </div>
+
+        <hr class="border-secondary my-4" />
+
+        <div class="text-center pb-3 text-white-50">
+        © 2026 Tech Solutions<br />
+        Template Oficial da Disciplina de Desenvolvimento Web
+        </div>
+    </div>
+    </footer>
+
+    <button id="btnTopo" class="btn btn-primary rounded-circle" type="button" aria-label="Voltar ao topo">
+    <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+    </button>
+
+    <div id="toast" class="toast-personalizado" role="status" aria-live="polite">
+    Mensagem enviada com sucesso!
+    </div>
+
+    <script src="assets/vendor/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

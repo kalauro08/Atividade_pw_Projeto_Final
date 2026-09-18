@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Prova 2º Bimestre</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="shell">
+    <a class="back-link" href="../index.html">← Voltar ao portfólio</a>
+    <header class="intro"><span class="eyebrow">AVALIAÇÃO DE JAVASCRIPT</span><h1>Prova 2º Bimestre</h1><p>Cadastro de aluno, notas e situação final em uma tela simples e organizada.</p></header>
+    <section class="panel">
+      <div class="panel-heading"><div><span class="eyebrow">RESULTADO DO ALUNO</span><h2>Calcule a média</h2></div><span class="icon">★</span></div>
+      <form id="formNotas">
+        <label>Nome do aluno<input id="nomeAluno" type="text" placeholder="Digite o nome" required></label>
+        <div class="grades"><label>Nota 1<input class="nota" type="number" min="0" max="10" step="0.1" required></label><label>Nota 2<input class="nota" type="number" min="0" max="10" step="0.1" required></label><label>Nota 3<input class="nota" type="number" min="0" max="10" step="0.1" required></label><label>Nota 4<input class="nota" type="number" min="0" max="10" step="0.1" required></label></div>
+        <button type="submit">Calcular resultado</button>
+      </form>
+      <div id="resultado" class="result" aria-live="polite"><span class="result-label">Situação final</span><strong>Preencha as notas para ver o resultado.</strong></div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
