@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Desafios JavaScript</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <header><a href="../index.html">← Voltar ao portfólio</a><span>JavaScript · lógica na prática</span></header>
+  <main>
+    <section class="intro"><p class="eyebrow">COLEÇÃO DE EXERCÍCIOS</p><h1>Desafios <em>JavaScript.</em></h1><p>Uma versão interativa dos exercícios de lógica: entradas de dados, condicionais, laços de repetição e cálculos.</p></section>
+    <section class="grid">
+      <article class="challenge"><span>01</span><h2>Perfil</h2><p>Organiza os dados informados pelo usuário.</p><form data-action="profile"><input name="nome" placeholder="Nome" required><input name="idade" type="number" placeholder="Idade" required><input name="cidade" placeholder="Cidade" required><button>Exibir perfil</button></form><output></output></article>
+      <article class="challenge"><span>02</span><h2>Média anual</h2><p>Calcula a média e a situação do estudante.</p><form data-action="average"><input name="n1" type="number" step=".1" placeholder="Nota 1" required><input name="n2" type="number" step=".1" placeholder="Nota 2" required><input name="n3" type="number" step=".1" placeholder="Nota 3" required><input name="n4" type="number" step=".1" placeholder="Nota 4" required><button>Calcular média</button></form><output></output></article>
+      <article class="challenge"><span>03</span><h2>Números pares</h2><p>Usa um laço para listar os pares de 1 a 20.</p><button data-action="even">Mostrar pares</button><output></output></article>
+      <article class="challenge"><span>04</span><h2>Tabuada</h2><p>Gera a tabuada de um número de 1 a 10.</p><form data-action="table"><input name="numero" type="number" placeholder="Digite um número" required><button>Gerar tabuada</button></form><output></output></article>
+      <article class="challenge"><span>05</span><h2>Acesso</h2><p>Valida uma combinação de login e senha.</p><form data-action="login"><input name="login" placeholder="Login" required><input name="senha" type="password" placeholder="Senha" required><button>Entrar</button></form><small>Teste: admin / 1234</small><output></output></article>
+      <article class="challenge"><span>06</span><h2>Classificador</h2><p>Identifica se o número é positivo, negativo ou zero.</p><form data-action="sign"><input name="numero" type="number" placeholder="Digite um número" required><button>Verificar</button></form><output></output></article>
+    </section>
+  </main>
+  <footer>Exercícios originais preservados na pasta <code>originais</code>.</footer>
+  <script src="script.js"></script>
+</body>
+</html>

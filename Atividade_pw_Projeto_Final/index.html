@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Igor Gabriel Kalauro de Abreu | Desenvolvedor Web</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <div id="barraProgresso"></div>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#inicio"><i class="bi bi-code-slash"></i> Igor Gabriel</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-label="Abrir menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+            <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+            <li class="nav-item"><a class="nav-link" href="#servicos">Serviços</a></li>
+            <li class="nav-item"><a class="nav-link" href="#galeria">Portfólio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+            <li class="nav-item ms-lg-2">
+              <button id="btnDarkMode" class="btn btn-outline-light" type="button" aria-label="Alternar tema"><i class="bi bi-sun-fill"></i></button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero text-center">
+      <div class="container">
+        <div class="hero-card p-5 mx-auto col-lg-9">
+          <span class="eyebrow text-uppercase d-block mb-3">Desenvolvedor web</span>
+          <h1 class="display-4 fw-bold mb-3">Igor Gabriel Kalauro de Abreu</h1>
+          <p class="lead">Crio interfaces digitais elegantes, funcionais e estratégicas para marcas que querem impactar, vender e ganhar relevância online.</p>
+          <div class="hero-trust mt-4">
+            <span><i class="bi bi-stars"></i> UX focada em conversão</span>
+            <span><i class="bi bi-lightning-charge-fill"></i> Desenvolvimento eficiente</span>
+            <span><i class="bi bi-shield-check"></i> Soluções profissionais</span>
+          </div>
+          <div class="d-flex flex-wrap justify-content-center gap-3 mt-4">
+            <a class="btn btn-light btn-lg" href="#sobre">Saiba mais</a>
+            <a class="btn btn-outline-light btn-lg" href="#contato">Fale comigo</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats-section">
+      <div class="container"><div class="stats-panel reveal">
+        <div><strong>+120</strong><span>projetos entregues</span></div>
+        <div><strong>98%</strong><span>clientes satisfeitos</span></div>
+        <div><strong>24h</strong><span>para dar o primeiro passo</span></div>
+      </div></div>
+    </section>
+
+    <section id="sobre" class="py-5">
+      <div class="container reveal">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-6">
+            <span class="eyebrow text-uppercase">Sobre mim</span>
+            <h2>Transformo ideias em experiências digitais com alto impacto.</h2>
+            <p>Sou Igor Gabriel Kalauro de Abreu, desenvolvedor web com foco em criar experiências modernas, intuitivas e visualmente refinadas.</p>
+            <p>Meu trabalho combina design, tecnologia e estratégia para entregar soluções que unem estética, funcionalidade e performance, sempre com objetivo de fortalecer presença digital e gerar resultados.</p>
+          </div>
+          <div class="col-lg-6">
+            <ul class="list-group shadow">
+              <li class="list-group-item"><strong>✓</strong> HTML5 semântico e acessível</li>
+              <li class="list-group-item"><strong>✓</strong> CSS moderno e responsivo</li>
+              <li class="list-group-item"><strong>✓</strong> Bootstrap e layouts premium</li>
+              <li class="list-group-item"><strong>✓</strong> JavaScript para interações dinâmicas</li>
+              <li class="list-group-item"><strong>✓</strong> Foco em UX, performance e conversão</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5 bg-light">
+      <div class="container">
+        <div class="text-center mb-5 reveal">
+          <span class="eyebrow text-uppercase">Especialidades</span>
+          <h2>Minha abordagem profissional</h2>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-3 reveal"><article class="card h-100 shadow border-0"><div class="card-body text-center"><i class="fa-solid fa-pen-ruler fa-3x text-primary mb-3"></i><h3 class="h4">Design</h3><p>Criação de interfaces modernas, limpas e orientadas à experiência do usuário.</p></div></article></div>
+          <div class="col-md-3 reveal"><article class="card h-100 shadow border-0"><div class="card-body text-center"><i class="fa-solid fa-code fa-3x text-success mb-3"></i><h3 class="h4">Front-end</h3><p>Implementação de layouts com código limpo, moderno e funcional.</p></div></article></div>
+          <div class="col-md-3 reveal"><article class="card h-100 shadow border-0"><div class="card-body text-center"><i class="fa-solid fa-mobile-screen-button fa-3x text-warning mb-3"></i><h3 class="h4">Responsividade</h3><p>Sites adaptados para desktop, tablet e celular com excelente visual.</p></div></article></div>
+          <div class="col-md-3 reveal"><article class="card h-100 shadow border-0"><div class="card-body text-center"><i class="fa-solid fa-chart-line fa-3x text-danger mb-3"></i><h3 class="h4">Estratégia</h3><p>Soluções pensadas para fortalecer presença digital e engajamento.</p></div></article></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="servicos" class="py-5">
+      <div class="container">
+        <div class="text-center mb-5 reveal">
+          <span class="eyebrow text-uppercase">Serviços</span>
+          <h2>O que posso entregar</h2>
+          <p class="text-muted">Soluções digitais com foco em qualidade, organização e resultado.</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4 reveal">
+            <article class="card h-100 shadow border-0"><div class="card-body text-center"><i class="fa-solid fa-laptop-code fa-3x text-primary mb-3"></i><h3 class="h4">Desenvolvimento Web</h3><p>Criação de páginas institucionais, landing pages e sistemas front-end responsivos.</p></div></article>
+          </div>
+          <div class="col-md-4 reveal">
+            <article class="card h-100 shadow border-0"><div class="card-body text-center"><i class="fa-solid fa-mobile-screen fa-3x text-success mb-3"></i><h3 class="h4">Experiência Mobile</h3><p>Interfaces ajustadas para telas menores, sem perder qualidade ou usabilidade.</p></div></article>
+          </div>
+          <div class="col-md-4 reveal">
+            <article class="card h-100 shadow border-0"><div class="card-body text-center"><i class="fa-solid fa-server fa-3x text-danger mb-3"></i><h3 class="h4">Hospedagem e Publicação</h3><p>Preparação e publicação de projetos para ambiente profissional e acessível.</p></div></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5 bg-light">
+      <div class="container reveal">
+        <div class="text-center mb-5">
+          <span class="eyebrow text-uppercase">Processo</span>
+          <h2>Como trabalho</h2>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4"><div class="card h-100"><div class="card-body"><span class="eyebrow d-block mb-2">01</span><h3 class="h4">Diagnóstico</h3><p>Entendo a proposta, a audiência e os objetivos do cliente para definir a melhor estratégia.</p></div></div></div>
+          <div class="col-md-4"><div class="card h-100"><div class="card-body"><span class="eyebrow d-block mb-2">02</span><h3 class="h4">Construção</h3><p>Desenvolvo a estrutura, visual e interações com atenção aos detalhes e ao resultado final.</p></div></div></div>
+          <div class="col-md-4"><div class="card h-100"><div class="card-body"><span class="eyebrow d-block mb-2">03</span><h3 class="h4">Entrega</h3><p>Entrego um produto moderno, funcional e pronto para representar a marca com profissionalismo.</p></div></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="galeria" class="py-5">
+      <div class="container">
+        <div class="text-center mb-5 reveal"><span class="eyebrow text-uppercase">Portfolio</span><h2>Projetos e entregas</h2><p class="text-muted">Demonstrações e materiais do meu trabalho em desenvolvimento web.</p></div>
+        <div class="portfolio-highlight reveal">
+          <div class="project-orb"><i class="bi bi-code-slash"></i></div>
+          <div>
+            <div class="eyebrow text-uppercase">Experiência digital</div>
+            <h3 class="mb-2">Landing pages e projetos interativos</h3>
+            <p>Criação de interfaces modernas, com foco em identidade visual, clareza de comunicação e navegação intuitiva para gerar impacto real.</p>
+            <div class="project-tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>Bootstrap</span>
+              <span>JavaScript</span>
+            </div>
+          </div>
+          <a class="project-link" href="desafios-javascript/index.html" target="_blank" rel="noopener">Ver projeto</a>
+        </div>
+        <div class="row g-4 mt-1">
+          <div class="col-md-4 reveal"><article class="card h-100 shadow"><div class="card-body"><i class="bi bi-window display-5 text-primary"></i><h3 class="h4 mt-3">Landing Page</h3><p>Uma página de apresentação objetiva e moderna.</p></div></article></div>
+          <div class="col-md-4 reveal"><article class="card h-100 shadow"><div class="card-body"><i class="bi bi-braces-asterisk display-5 text-success"></i><h3 class="h4 mt-3">Desafios JavaScript</h3><p>Exercícios interativos de lógica, cálculos, laços e validações.</p><a class="btn btn-sm project-card-link project-js-link mt-2" href="desafios-javascript/index.html" target="_blank" rel="noopener">Visualizar <i class="bi bi-arrow-up-right"></i></a></div></article></div>
+          <div class="col-md-4 reveal"><article class="card h-100 shadow"><div class="card-body"><i class="bi bi-calculator-fill display-5 text-danger"></i><h3 class="h4 mt-3">Calculadora de Geometria</h3><p>Calcula áreas, hipotenusa e permite restaurar o último resultado.</p><a class="btn btn-sm project-card-link mt-2" href="calculadora/index.html" target="_blank" rel="noopener">Visualizar <i class="bi bi-arrow-up-right"></i></a></div></article></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="py-5 bg-light">
+      <div class="container"><div class="row justify-content-center"><div class="col-lg-8 reveal">
+        <span class="eyebrow text-uppercase text-center d-block mb-2">Contato</span>
+        <h2 class="text-center mb-4">Vamos criar algo relevante juntos?</h2>
+        <p class="text-center text-muted mb-4">Se você precisa de um site moderno, profissional e funcional, posso ajudar a transformar sua ideia em uma presença digital sólida e impactante.</p>
+        <div class="social-contact-list d-flex flex-wrap justify-content-center gap-3 mb-4">
+          <a class="social-link whatsapp-link" href="https://wa.me/5569992766386?text=Ol%C3%A1%20Igor%2C%20vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto." target="_blank" rel="noopener" aria-label="WhatsApp">
+            <i class="bi bi-whatsapp"></i>
+          </a>
+          <a class="social-link instagram-link" href="https://instagram.com/@_.igorgk" target="_blank" rel="noopener" aria-label="Instagram">
+            <i class="bi bi-instagram"></i>
+          </a>
+        </div>
+        <form id="formContato" novalidate>
+          <div class="row g-3">
+            <div class="col-md-6"><label class="form-label" for="nome">Nome</label><input id="nome" name="nome" class="form-control" type="text" placeholder="Seu nome completo" required></div>
+            <div class="col-md-6"><label class="form-label" for="email">E-mail</label><input id="email" name="email" class="form-control" type="email" placeholder="seuemail@exemplo.com" required></div>
+            <div class="col-md-6"><label class="form-label" for="telefone">Telefone</label><input id="telefone" name="telefone" class="form-control" type="tel" placeholder="(99) 99999-9999"></div>
+            <div class="col-md-6"><label class="form-label" for="assunto">Assunto</label><input id="assunto" name="assunto" class="form-control" type="text" placeholder="Ex: Landing page profissional" required></div>
+            <div class="col-12"><label class="form-label" for="mensagem">Mensagem</label><textarea id="mensagem" name="mensagem" class="form-control" rows="5" placeholder="Conte-me um pouco sobre seu projeto..." required></textarea></div>
+            <div class="col-12 text-center"><button class="btn btn-primary px-4" type="submit">Enviar mensagem</button><p id="formFeedback" aria-live="polite"></p></div>
+          </div>
+        </form>
+      </div></div></div>
+    </section>
+  </main>
+
+  <footer class="bg-dark text-white py-4 text-center"><p class="mb-0">© 2026 Igor Gabriel Kalauro de Abreu · Desenvolvedor Web</p></footer>
+  <button id="btnTopo" class="btn btn-primary rounded-circle" type="button" aria-label="Voltar ao topo"><i class="bi bi-arrow-up"></i></button>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!--Igor Gabriel Kalauro de Abreu-->
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Web</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <header>
+        <h1>Calculadora de Geometria</h1>
+    </header>
+
+    <main>
+        <section class="calculator-section">
+            <h2>Calc. da Área do Retângulo</h2>
+
+            <p id="erroRetangulo" class="erro"></p>
+
+            <div class="input-group">
+                <label for="baseRetangulo">Base:</label>
+                <input type="number" id="baseRetangulo">
+            </div>
+
+            <div class="input-group">
+                <label for="alturaRetangulo">Altura:</label>
+                <input type="number" id="alturaRetangulo">
+            </div>
+
+            <button id="btnAreaRetangulo">Calcular Área</button>
+
+            <p>Área do Retângulo:
+                <span id="resultadoAreaRetangulo"></span>
+            </p>
+        </section>
+        <section class="calculator-section">
+            <h2>Calculadora da Hipotenusa</h2>
+
+            <p id="erroHipotenusa" class="erro"></p>
+
+            <div class="input-group">
+                <label for="catetoA">Cateto A:</label>
+                <input type="number" id="catetoA">
+            </div>
+
+            <div class="input-group">
+                <label for="catetoB">Cateto B:</label>
+                <input type="number" id="catetoB">
+            </div>
+
+            <button id="btnCalcularHipotenusa">Calcular</button>
+
+            <p>Hipotenusa:
+                <span id="resultadoHipotenusa"></span>
+            </p>
+        </section>
+        <section class="calculator-section">
+            <h2>Área do Círculo</h2>
+
+            <p id="erroCirculo" class="erro"></p>
+
+            <div class="input-group">
+                <label for="raioCirculo">Raio:</label>
+                <input type="number" id="raioCirculo">
+            </div>
+
+            <button id="btnCirculo">Calcular Área</button>
+
+            <p>Área do Círculo:
+                <span id="resultadoCirculo"></span>
+            </p>
+        </section>
+
+        <section class="calculator-section clean-section">
+            <h2>Limpeza</h2>
+
+            <button id="btnLimparTudo" class="btn-clear">
+                Limpar Tudo
+            </button>
+        </section>
+
+        <section class="calculator-section restore-section">
+            <h2>Restaurar Resultado</h2>
+
+            <button id="btnUltimoResultado">
+                Restaurar último resultado
+            </button>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Calculadora Web</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
