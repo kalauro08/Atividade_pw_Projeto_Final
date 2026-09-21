@@ -112,6 +112,9 @@ footer { background:#092e32!important; }
 .dark-mode .portfolio-highlight { color:var(--ink); background:linear-gradient(120deg,#1d3735,#303329); border-color:#3b5b55; }
 .dark-mode .portfolio-highlight h3,.dark-mode .portfolio-highlight p { color:var(--ink); }
 .dark-mode input,.dark-mode textarea { background:#142324; color:#fff; border-color:#3d5a56; }
+.dark-mode #contato .form-label { color:var(--ink); }
+.dark-mode #contato .form-control::placeholder { color:#a9bdb8; opacity:1; }
+.dark-mode #contato .form-control:focus { color:#fff; background:#172b2b; border-color:#72d6c4; }
 
 @media (max-width:767.98px) {
 	.hero { min-height:72vh; padding:6rem 0; }

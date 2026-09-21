@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }, { threshold: .15 }) : null;
   document.querySelectorAll(".reveal").forEach((item) => observer ? observer.observe(item) : item.classList.add("active"));
 
-  form?.addEventListener("submit", (event) => {
+  form?.addEventListener("submit", async (event) => {
     event.preventDefault();
     let valid = true;
 
@@ -89,25 +89,28 @@ document.addEventListener("DOMContentLoaded", () => {
     const assunto = document.querySelector("#assunto")?.value.trim() || "Sem assunto";
     const mensagem = document.querySelector("#mensagem")?.value.trim() || "";
 
-    const corpo = [
-      "Olá,",
-      "",
-      `Nome: ${nome}`,
-      `E-mail: ${email}`,
-      `Telefone: ${telefone}`,
-      "",
-      "Mensagem:",
-      mensagem,
-      "",
-      "Atenciosamente,",
-      nome
-    ].join("\n");
+    const submitButton = form.querySelector("button[type='submit']");
+    submitButton.disabled = true;
+    submitButton.textContent = "Salvando...";
 
-    const mailtoLink = `mailto:${perfil.email}?subject=${encodeURIComponent(assunto)}&body=${encodeURIComponent(corpo)}`;
+    try {
+      const response = await fetch("/api/contatos", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ nome, email, telefone, assunto, mensagem })
+      });
+      const result = await response.json();
+      if (!response.ok) throw new Error(result.erro || "Não foi possível salvar o contato.");
 
-    feedback.className = "text-success mt-3";
-    feedback.textContent = "Abrindo seu e-mail para enviar a mensagem...";
-    window.location.href = mailtoLink;
-    form.reset();
+      feedback.className = "text-success mt-3";
+      feedback.textContent = "Mensagem recebida! Em breve entrarei em contato.";
+      form.reset();
+    } catch (error) {
+      feedback.className = "text-danger mt-3";
+      feedback.textContent = error.message || "Não foi possível enviar agora. Tente novamente.";
+    } finally {
+      submitButton.disabled = false;
+      submitButton.textContent = "Enviar mensagem";
+    }
   });
 });
