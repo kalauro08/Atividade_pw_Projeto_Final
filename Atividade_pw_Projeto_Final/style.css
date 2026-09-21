@@ -22,9 +22,11 @@
 .instagram-link { background:linear-gradient(135deg,#f58529,#dd2a7b,#8134af,#515bd4); color:#fff; box-shadow:0 12px 24px rgba(221,42,123,.25); }
 .social-link i { font-size:1.1rem; }
 @media (max-width:767.98px) { .portfolio-highlight { grid-template-columns:auto 1fr; }.project-link { grid-column:1 / -1; text-align:center; } }
-#galeria .card { height:380px; }
-#galeria .card .card-body { display:flex; flex-direction:column; }
+#galeria .card { height:380px; overflow:hidden; }
+#galeria .card .card-body { display:flex; flex-direction:column; padding:1.8rem; }
 #galeria .card .project-card-link { margin-top:auto!important; align-self:flex-start; }
+#galeria .project-card-link { display:inline-flex; align-items:center; gap:.35rem; transition:transform .2s ease, box-shadow .2s ease; }
+#galeria .project-card-link:hover { transform:translateY(-2px); box-shadow:0 8px 16px rgba(15,118,110,.16); }
 
 /* Visual refinado da pagina principal */
 :root {
@@ -95,6 +97,13 @@ p { line-height:1.7; }
 .project-orb { width:4.8rem; height:4.8rem; border-radius:1rem; background:var(--primary); color:#fff; box-shadow:0 12px 25px rgba(15,118,110,.2); }
 .project-tags span { border:1px solid #c7ded8; border-radius:.4rem; background:rgba(255,255,255,.6); color:#2b625b; }
 .project-link { border-radius:.6rem; background:var(--primary-dark); }
+.portfolio-category { margin-top:4.5rem; padding-top:2.25rem; border-top:1px solid var(--line); }
+.portfolio-category-alt { margin-top:4rem; }
+.category-heading { display:flex; align-items:center; gap:1rem; margin-bottom:1.6rem; }
+.category-heading h3 { margin:.2rem 0 .25rem; font-size:clamp(1.55rem,3vw,2.15rem); }
+.category-heading p { margin:0; color:var(--muted); }
+.category-icon { display:grid; place-items:center; flex:0 0 3.2rem; width:3.2rem; height:3.2rem; border-radius:.8rem; color:#fff; background:var(--primary); box-shadow:0 10px 22px rgba(15,118,110,.18); font-size:1.25rem; }
+.portfolio-category-alt .category-icon { color:#173434; background:#f2b880; box-shadow:0 10px 22px rgba(194,107,47,.15); }
 
 #contato form { border:1px solid var(--line); border-radius:1rem; background:#fff; box-shadow:var(--shadow); }
 .form-control { border-color:#cbd9d4; border-radius:.55rem; }
@@ -126,4 +135,6 @@ footer { background:#092e32!important; }
 	#sobre { padding-top:4rem!important; }
 	.portfolio-highlight { grid-template-columns:auto 1fr; }
 	.project-link { grid-column:1 / -1; text-align:center; }
+	.portfolio-category { margin-top:3.5rem; padding-top:1.75rem; }
+	.category-heading { align-items:flex-start; }
 }
