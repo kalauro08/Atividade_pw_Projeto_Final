@@ -109,6 +109,18 @@ p { line-height:1.7; }
 .form-control { border-color:#cbd9d4; border-radius:.55rem; }
 .form-control:focus { border-color:var(--primary); box-shadow:0 0 0 .22rem rgba(15,118,110,.14); }
 #contato .btn { border:0; background:var(--primary); }
+.contact-map { align-self:flex-start; }
+.contact-map-card { margin-top:.35rem; padding:1.5rem; border:1px solid var(--line); border-radius:1rem; background:#fff; box-shadow:var(--shadow); }
+.contact-map-card .eyebrow { display:block; margin-bottom:.65rem; }
+.contact-map-card h3 { margin-bottom:.45rem; font-size:1.6rem; }
+.contact-map-card p { display:flex; align-items:center; gap:.45rem; margin-bottom:1rem; color:var(--muted); }
+.contact-map-card p i { color:var(--primary); }
+.contact-map-card iframe { display:block; width:100%; height:20rem; border:0; border-radius:.7rem; }
+.map-link { display:flex; align-items:center; justify-content:flex-end; gap:.35rem; margin-top:.7rem; color:var(--primary-dark); font-size:.85rem; font-weight:700; text-decoration:none; }
+.map-link:hover { color:var(--primary); text-decoration:underline; }
+.dark-mode .contact-map-card { background:#1b2d2e; border-color:#35504d; }
+.dark-mode .contact-map-card h3 { color:var(--ink); }
+.dark-mode .map-link { color:#72d6c4; }
 .social-link { border-radius:.6rem; }
 .whatsapp-link { background:#21b864; }
 .instagram-link { background:linear-gradient(135deg,#e67d44,#b73578); }
@@ -138,3 +150,4 @@ footer { background:#092e32!important; }
 	.portfolio-category { margin-top:3.5rem; padding-top:1.75rem; }
 	.category-heading { align-items:flex-start; }
 }
+
