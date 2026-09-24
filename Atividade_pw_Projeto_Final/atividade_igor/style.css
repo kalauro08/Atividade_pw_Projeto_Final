@@ -1,0 +1,108 @@
+/*Igor Gabriel Kalauro de Abreu*/
+
+/* 1. CONFIGURAÇÕES GERAIS (Reset e Estilo do Fundo)*/
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Garante que margens não quebrem o layout */
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fonte moderna e limpa */
+    background-color: #f4f7f6; /* Cor de fundo cinza bem claro e suave */
+    color: #333333; /* Cor do texto principal (cinza escuro, melhor que preto puro) */
+    line-height: 1.6; /* Melhora o espaçamento entre as linhas do texto */
+    padding: 40px 20px;
+    max-width: 800px; /* Limita a largura máxima do site no computador */
+    margin: 0 auto; /* Centraliza todo o site na tela */
+}
+
+/* 2. CABEÇALHO (Header)*/
+header {
+    text-align: center; /* Centraliza o título e a introdução */
+    margin-bottom: 30px;
+}
+
+h1 {
+    color: #1a365d; /* Azul escuro elegante */
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.1rem;
+    color: #4a5568; /* Cinza médio para o subtítulo */
+}
+
+/* 3. IMAGEM DE PERFIL*/
+img {
+    display: block;
+    margin: 0 auto 30px auto; /* Centraliza a imagem e joga espaço para baixo */
+    width: 180px; /* Largura da foto */
+    height: 180px; /* Altura da foto */
+    border-radius: 50%; /* Deixa a foto perfeitamente redonda */
+    object-fit: cover; /* Garante que a foto não fique distorcida */
+    border: 4px solid #1a365d; /* Borda estilizada com o azul do título */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra leve ao redor da foto */
+}
+
+/* 4. TEXTO DE INTERESSES (Texto Principal)*/
+body > p {
+    font-size: 1.1rem;
+    text-align: center;
+    background-color: #ffffff; /* Fundo branco para destacar o texto */
+    padding: 20px;
+    border-radius: 8px; /* Cantos arredondados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* Sombra bem sutil */
+    margin-bottom: 35px;
+}
+
+/* 5. SEÇÃO DE HOBBIES */
+#meus-hobbies {
+    background-color: #ffffff; /* Caixa branca de fundo */
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    margin-bottom: 35px;
+}
+
+#meus-hobbies h2 {
+    color: #1a365d;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #e2e8f0; /* Linha fina divisória abaixo do título */
+    padding-bottom: 5px;
+}
+
+#meus-hobbies ul {
+    list-style-type: none; /* Remove aquelas bolinhas padrão da lista */
+}
+
+#meus-hobbies li {
+    padding: 8px 12px;
+    margin-bottom: 8px;
+    background-color: #f7fafc; /* Fundo cinza bem claro para cada item */
+    border-left: 4px solid #2b6cb0; /* Barrinha azul vertical na esquerda do item */
+    border-radius: 0 4px 4px 0; /* Arredonda apenas o lado direito do item */
+    font-weight: 500;
+}
+
+/* 6. LINK DA REDE SOCIAL (Botão do Instagram)*/
+a {
+    display: block; /* Transforma o link em um bloco */
+    width: fit-content; /* O botão só terá o tamanho do texto dentro dele */
+    margin: 20px auto; /* Centraliza o botão na tela */
+    padding: 12px 24px;
+    background-color: #e1306c; /* Cor oficial do Instagram */
+    color: #ffffff; /* Texto branco */
+    text-decoration: none; /* Remove o sublinhado padrão de links */
+    font-weight: bold;
+    border-radius: 25px; /* Deixa as laterais do botão arredondadas (estilo pílula) */
+    box-shadow: 0 4px 6px rgba(225, 48, 108, 0.3); /* Sombra rosa/neon sutil */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Efeito suave ao passar o mouse */
+}
+
+/* Efeito quando o usuário passa o mouse por cima do botão */
+a:hover {
+    background-color: #b12251; /* Escurece o rosa do Instagram */
+    transform: translateY(-2px); /* Faz o botão "subir" levemente */
+}

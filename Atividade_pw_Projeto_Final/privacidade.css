@@ -1,0 +1,21 @@
+:root { --ink:#17212b; --muted:#65727d; --surface:#fbfcfa; --line:#dce6e1; --primary:#0f766e; --primary-dark:#0a4f4a; --accent:#ef8354; --shadow:0 20px 55px rgba(22,49,44,.1); }
+* { box-sizing:border-box; }
+body { min-height:100vh; margin:0; background:linear-gradient(135deg,#eef5f1 0%,#fbfcfa 55%,#f8eee3 100%); color:var(--ink); font-family:"DM Sans",sans-serif; }
+h1,h2 { font-family:"Space Grotesk",sans-serif; }
+.privacy-page { width:min(980px,calc(100% - 2rem)); margin:0 auto; padding:2rem 0 4rem; }
+.back-link { display:inline-flex; align-items:center; gap:.45rem; color:var(--primary-dark); font-weight:700; text-decoration:none; }
+.back-link:hover { color:var(--primary); text-decoration:underline; }
+.privacy-hero { max-width:48rem; padding:clamp(4rem,10vw,7rem) 0 3rem; }
+.eyebrow { color:var(--primary); font-size:.72rem; font-weight:700; letter-spacing:.17em; }
+.privacy-hero h1 { margin:1rem 0 1rem; font-size:clamp(2.8rem,7vw,5.5rem); line-height:.98; letter-spacing:-.06em; }
+.privacy-hero p { max-width:42rem; color:var(--muted); font-size:1.15rem; line-height:1.75; }
+.privacy-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1rem; }
+.privacy-card { padding:1.75rem; border:1px solid rgba(220,230,225,.95); border-radius:1rem; background:rgba(255,255,255,.82); box-shadow:var(--shadow); }
+.privacy-card > i { display:inline-grid; place-items:center; width:2.7rem; height:2.7rem; border-radius:.7rem; background:#dff3ed; color:var(--primary); font-size:1.3rem; }
+.privacy-card h2 { margin:1.2rem 0 .6rem; font-size:1.35rem; }
+.privacy-card p,.rights-note p { margin:0; color:var(--muted); line-height:1.7; }
+.rights-note { margin-top:1rem; padding:1.75rem; border-left:4px solid var(--accent); border-radius:.7rem; background:rgba(255,255,255,.65); }
+.rights-note h2 { margin:0 0 .6rem; font-size:1.5rem; }
+.rights-note a { color:var(--primary-dark); font-weight:700; }
+.updated { margin-top:1rem!important; font-size:.85rem; }
+@media (max-width:650px) { .privacy-page { width:min(100% - 1.25rem,980px); } .privacy-grid { grid-template-columns:1fr; } }
